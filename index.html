@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="cover-bg">
+    <head>
+        <title>Demo Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Francois+One|Hind+Siliguri|Bungee|Londrina+Solid" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="centered-text covered-text title-text" id="title">Working Enviroment Survey</h1>
+        <p class="justified-text covered-text desc-text" id="description">We want improve and make you happy, let us hear you!</p>
+        <!--<hr class="top-hr">-->
+        <form id="survey-form" action="index.html" class="two-columns notebook-bg">
+
+            <label id="name-label" for="name" class="label-field">Name:*</label>
+            <input id="name" type="text" placeholder="Your name." required>
+
+            <label id="email-label" for="email" class="label-field">Email:*</label>
+            <input id="email" type="email" placeholder="youremail@thecompany.com" required>
+
+            <label id="number-label" for="number" class="label-field">Age:*</label>
+            <input id="number" type="number" class="years-input" placeholder="5" 
+                   min="0" max="100">
+            <label for="dropdown" class="label-field">Gender:</label>
+            <select id="dropdown">
+                <option label=" " value=""></option>
+                <option label="Male" value="male">Male</option>
+                <option label="Female" value="female">Female</option>
+                <option label="Other" value="other">Other</option>
+            </select>
+
+            <label class="form-separator"></label>
+            <label class="label-field centered-item">Years of Experience:</label>
+            <div class="centered-item two-columns-radio-checkbox">
+                <input id="radio_1-3" name="radio-yrs-exp" type="radio" value="1-3">
+                <label for="radio_1-3" class="radio-checkbox-label">1-3</label>
+
+                <input id="radio_4-8" name="radio-yrs-exp" type="radio" value="4-8">
+                <label for="radio_4-8" class="radio-checkbox-label">4-8</label>
+
+                <input id="radio_9-15" name="radio-yrs-exp" type="radio" value="9-15">
+                <label for="radio_9-15" class="radio-checkbox-label">9-15</label>
+
+                <input id="radio_16-23" name="radio-yrs-exp" type="radio" value="16-23">
+                <label for="radio_16-23" class="radio-checkbox-label">16-23</label>
+
+                <input id="radio_mt-23" name="radio-yrs-exp" type="radio" value="mt-23">
+                <label for="radio_mt-23" class="radio-checkbox-label">more than 23</label>
+            </div>
+
+            <label class="form-separator"></label>
+            <label class="label-field centered-item">Education:</label>
+            <div class="centered-item two-columns-radio-checkbox">
+                <input id="radio_hs" name="radio-education" type="radio" value="hs">
+                <label for="radio_hs" class="radio-checkbox-label">High school</label>
+
+                <input id="radio_sc" name="radio-education" type="radio" value="sc">
+                <label for="radio_sc" class="radio-checkbox-label">Some college</label>
+
+                <input id="radio_bd" name="radio-education" type="radio" value="bd">
+                <label for="radio_bd" class="radio-checkbox-label">Bachelor's degree</label>
+
+                <input id="radio_md" name="radio-education" type="radio" value="md">
+                <label for="radio_md" class="radio-checkbox-label">Master's degree</label>
+
+                <input id="radio_dd" name="radio-education" type="radio" value="dd">
+                <label for="radio_dd" class="radio-checkbox-label">Doctorate</label>
+            </div>
+
+            <label class="form-separator"></label>
+            <label class="label-field centered-item">I work in a communication-rich culture:</label>
+            <div class="centered-item five-columns">
+                <div class="two-rows">
+                    <label for="radio_ans1-1" class="">Strongly Disagree</label>
+                    <input id="radio_ans1-1" name="radio-ans1" type="radio" value="ans1-1">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans1-2" class="">Disagree</label>
+                    <input id="radio_ans1-2" name="radio-ans1" type="radio" value="ans1-2">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans1-3" class="">Neither /nor</label>
+                    <input id="radio_ans1-3" name="radio-ans1" type="radio" value="ans1-3">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans1-4" class="">Agree</label>
+                    <input id="radio_ans1-4" name="radio-ans1" type="radio" value="ans1-4">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans1-5" class="">Strongly Agree</label>
+                    <input id="radio_ans1-5" name="radio-ans1" type="radio" value="ans1-5">
+                </div>
+            </div>
+
+            <label class="label-field centered-item">I work where development is encouraged:</label>
+            <div class="centered-item five-columns">
+                <div class="two-rows">
+                    <label for="radio_ans2-1" class="">Strongly Disagree</label>
+                    <input id="radio_ans2-1" name="radio-ans2" type="radio" value="ans2-1">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans2-2" class="">Disagree</label>
+                    <input id="radio_ans2-2" name="radio-ans2" type="radio" value="ans2-2">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans2-3" class="">Neither /nor</label>
+                    <input id="radio_ans2-3" name="radio-ans2" type="radio" value="ans2-3">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans2-4" class="">Agree</label>
+                    <input id="radio_ans2-4" name="radio-ans2" type="radio" value="ans2-4">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans2-5" class="">Strongly Agree</label>
+                    <input id="radio_ans2-5" name="radio-ans2" type="radio" value="ans2-5">
+                </div>
+            </div>
+
+            <label class="label-field centered-item">In my workplace men and women are treated as equals:</label>
+            <div class="centered-item five-columns">
+                <div class="two-rows">
+                    <label for="radio_ans3-1" class="">Strongly Disagree</label>
+                    <input id="radio_ans3-1" name="radio-ans3" type="radio" value="ans3-1">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans3-2" class="">Disagree</label>
+                    <input id="radio_ans3-2" name="radio-ans3" type="radio" value="ans3-2">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans3-3" class="">Neither /nor</label>
+                    <input id="radio_ans3-3" name="radio-ans3" type="radio" value="ans3-3">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans3-4" class="">Agree</label>
+                    <input id="radio_ans3-4" name="radio-ans3" type="radio" value="ans3-4">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans3-5" class="">Strongly Agree</label>
+                    <input id="radio_ans3-5" name="radio-ans3" type="radio" value="ans3-5">
+                </div>
+            </div>
+
+            <label class="label-field centered-item">In my work, I've enough time to do what's expected of me:</label>
+            <div class="centered-item five-columns">
+                <div class="two-rows">
+                    <label for="radio_ans4-1" class="">Strongly Disagree</label>
+                    <input id="radio_ans4-1" name="radio-ans4" type="radio" value="ans4-1">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans4-2" class="">Disagree</label>
+                    <input id="radio_ans4-2" name="radio-ans4" type="radio" value="ans4-2">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans4-3" class="">Neither /nor</label>
+                    <input id="radio_ans4-3" name="radio-ans4" type="radio" value="ans4-3">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans4-4" class="">Agree</label>
+                    <input id="radio_ans4-4" name="radio-ans4" type="radio" value="ans4-4">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans4-5" class="">Strongly Agree</label>
+                    <input id="radio_ans4-5" name="radio-ans4" type="radio" value="ans4-5">
+                </div>
+            </div>
+
+            <label class="label-field centered-item">I get the technical support when I need it:</label>
+            <div class="centered-item five-columns">
+                <div class="two-rows">
+                    <label for="radio_ans-1" class="">Strongly Disagree</label>
+                    <input id="radio_ans-1" name="radio-ans" type="radio" value="ans-1">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans-2" class="">Disagree</label>
+                    <input id="radio_ans-2" name="radio-ans" type="radio" value="ans-2">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans-3" class="">Neither /nor</label>
+                    <input id="radio_ans-3" name="radio-ans" type="radio" value="ans-3">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans-4" class="">Agree</label>
+                    <input id="radio_ans-4" name="radio-ans" type="radio" value="ans-4">
+                </div>
+                <div class="two-rows">
+                    <label for="radio_ans-5" class="">Strongly Agree</label>
+                    <input id="radio_ans-5" name="radio-ans" type="radio" value="ans-5">
+                </div>
+            </div>
+
+            <label class="form-separator"></label>
+            <label class="label-field centered-item">Confidentiality: </label>
+            <div class="centered-item two-columns-radio-checkbox">
+                <input id="check1" type="checkbox" value="check1">
+                <label for="check1" class="radio-checkbox-label">I want my answers to remain private.</label>
+
+                <input id="check2" type="checkbox" value="check2">
+                <label for="check2" class="radio-checkbox-label">I want to receive an email with my answers.</label>
+
+                <input id="check3" type="checkbox" value="check3">
+                <label for="check3" class="radio-checkbox-label">I agreed to participate voluntarily in this survey.</label>
+            </div>
+
+            <label class="form-separator"></label>
+            <label for="comments" class="label-field align-start">Add any comments about what you like or dislike in your work:</label>
+            <textarea id="comments" rows="5" placeholder="Your comements here..."></textarea>
+
+            <label class="form-separator"></label>
+            <label></label>
+            <input id="submit" name="Send Survey" type="submit">
+
+        </form>
+        <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+    </body>
+</html>
